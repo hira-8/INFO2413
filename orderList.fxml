@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutY="35.0" prefHeight="2.0" prefWidth="725.0" />
+      <Label layoutX="140.0" layoutY="7.0" prefHeight="26.0" prefWidth="143.0" text="Orders List">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+      </Label>
+      <TableView layoutY="33.0" prefHeight="494.0" prefWidth="725.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order ID" />
+          <TableColumn prefWidth="75.0" text="Client ID" />
+            <TableColumn prefWidth="130.0" text="Client Last Name" />
+            <TableColumn prefWidth="104.0" text="Equipment ID" />
+            <TableColumn prefWidth="75.0" text="Payment" />
+            <TableColumn prefWidth="95.0" text=" Device IN" />
+            <TableColumn prefWidth="95.0" text="Device Due" />
+            <TableColumn prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

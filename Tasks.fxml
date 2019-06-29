@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutY="38.0" prefHeight="3.0" prefWidth="783.0" />
+      <Label layoutX="236.0" layoutY="6.0" text="Skynet Pending Tasks">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+      </Label>
+      <TableView layoutY="41.0" prefHeight="448.0" prefWidth="783.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order ID" />
+          <TableColumn prefWidth="75.0" text="Client ID" />
+            <TableColumn prefWidth="130.0" text="Client Last Name" />
+            <TableColumn prefWidth="130.0" text="Order Due Date" />
+            <TableColumn prefWidth="130.0" text="Payment Status" />
+            <TableColumn prefWidth="118.0" text="Service Cat" />
+            <TableColumn prefWidth="115.0" text="Comments" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

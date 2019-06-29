@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardPageController">
+   <children>
+      <Label layoutX="113.0" layoutY="92.0" text="Name" />
+      <Label layoutX="113.0" layoutY="146.0" text="ID" />
+      <Label layoutX="113.0" layoutY="200.0" text="Username" />
+      <Label layoutX="113.0" layoutY="256.0" text="Password" />
+      <Button fx:id="btn_submit" layoutX="197.0" layoutY="332.0" mnemonicParsing="false" onAction="#OrderFormBtnClicked" text="Submit" />
+      <TextField fx:id="txt_name" layoutX="197.0" layoutY="86.0" />
+      <TextField fx:id="txt_ID" layoutX="197.0" layoutY="141.0" />
+      <TextField fx:id="txt_userName" layoutX="197.0" layoutY="195.0" />
+      <TextField fx:id="txt_pswd" layoutX="197.0" layoutY="251.0" />
+   </children>
+</fx:root>

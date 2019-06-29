@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardPageController">
+   <children>
+      <Label layoutX="69.0" layoutY="23.0" prefHeight="21.0" prefWidth="261.0" text="Welcome to Dashboard" />
+      <Separator layoutX="-4.0" layoutY="39.0" prefHeight="11.0" prefWidth="609.0">
+         <cursor>
+            <Cursor fx:constant="E_RESIZE" />
+         </cursor>
+      </Separator>
+      <GridPane layoutX="34.0" layoutY="164.0" prefHeight="215.0" prefWidth="527.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#OrderFormBtnClicked" prefHeight="45.0" prefWidth="215.0" text="Create Order" />
+            <Button mnemonicParsing="false" onAction="#orderListBtnClicked" prefHeight="45.0" prefWidth="215.0" text="Order Lists" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#TasksBtnClicked" prefHeight="45.0" prefWidth="215.0" text="Tasks" GridPane.rowIndex="1" />
+            <Button minHeight="45.0" minWidth="215.0" mnemonicParsing="false" onAction="#inventoryBtnClicked" prefWidth="215.0" text="Inventory Parts" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" />
+         </padding>
+      </GridPane>
+      <Button layoutX="4.0" layoutY="6.0" mnemonicParsing="false" onAction="#backBtnClicked" prefWidth="20.0" text="&lt;" textOverrun="CLIP" AnchorPane.leftAnchor="4.0">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Separator layoutX="-1.0" layoutY="363.0" prefHeight="4.0" prefWidth="600.0" />
+      <MenuButton ellipsisString="" layoutX="515.0" layoutY="8.0" mnemonicParsing="false" text="User">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Profile" />
+          <MenuItem mnemonicParsing="false" onAction="#backBtnClicked" text="Logout" />
+        </items>
+      </MenuButton>
+      <Label layoutX="190.0" layoutY="73.0" prefHeight="81.0" prefWidth="201.0" text="SkyNet Tech" textAlignment="CENTER" textFill="#ff0707">
+         <font>
+            <Font name="Tahoma" size="36.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets right="15.0" />
+   </padding>
+</AnchorPane>
